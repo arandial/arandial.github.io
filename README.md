@@ -4,7 +4,7 @@ Senior Product Owner · Fintech & Payments · Technical Product Manager
 
 Página web personal (bilingüe ES/EN) con mi experiencia, servicios y habilidades.
 
-**Ver en línea:** https://arandial.github.io/Repository-lat/
+**Ver en línea:** https://arandial.github.io/
 
 ## Contenido
 - `index.html` — sitio completo (HTML + CSS + JS, sin dependencias)
