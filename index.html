@@ -176,6 +176,10 @@
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
   .tag { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
   .highlight { color: var(--accent); font-weight: 700; }
+  .project { margin-top: 16px; padding: 16px 18px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); }
+  .project-label { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+  .project h4 { font-family: "Space Grotesk", Inter, sans-serif; font-size: 16px; margin: 4px 0 0; }
+  .project ul { margin-top: 10px; }
 
   /* Skills */
   .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
@@ -311,8 +315,8 @@
         <article class="card service reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 12 2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg></div>
           <h3><span lang="es">Estrategia de QA y Automatización</span><span lang="en">QA Strategy & Test Automation</span></h3>
-          <p lang="es">Creación de equipos y prácticas de QA desde cero. Frameworks con Playwright, Cypress, Appium y CI/CD en GitHub Actions.</p>
-          <p lang="en">Building QA teams and practices from scratch. Frameworks with Playwright, Cypress, Appium, and CI/CD on GitHub Actions.</p>
+          <p lang="es">Creación de equipos y prácticas de QA desde cero. Frameworks con Playwright, Cypress, Appium y CI/CD en GitHub Actions. Experiencia en fintech y e-commerce (Shopify).</p>
+          <p lang="en">Building QA teams and practices from scratch. Frameworks with Playwright, Cypress, Appium, and CI/CD on GitHub Actions. Experience in fintech and e-commerce (Shopify).</p>
         </article>
         <article class="card service reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m6.5 6.5 3.3 3.3m4.4 0 3.3-3.3m-11 11 3.3-3.3m4.4 0 3.3 3.3"/></svg></div>
@@ -405,7 +409,21 @@
             <li>Architected a test automation framework (Playwright, Appium, GitHub Actions) that <span class="highlight">cut regression cycle time by 50%</span> and reduced production defects.</li>
             <li>Implemented KPI dashboards and service-quality metrics giving leadership real-time visibility into delivery and defect trends.</li>
           </ul>
-          <div class="tags"><span class="tag">Playwright</span><span class="tag">Appium</span><span class="tag">GitHub Actions</span><span class="tag">KPIs</span></div>
+          <div class="project">
+            <div class="project-label"><span lang="es">Proyecto destacado · 1 año</span><span lang="en">Featured project · 1 year</span></div>
+            <h4><span lang="es">QA — Marketplace sobre Shopify</span><span lang="en">QA — Shopify Marketplace</span></h4>
+            <ul lang="es">
+              <li>Pruebas funcionales de los flujos del marketplace: catálogo, carrito, checkout, pagos, órdenes y gestión de vendedores.</li>
+              <li>Validación de apps e integraciones de Shopify: APIs (REST/GraphQL), webhooks y temas.</li>
+              <li>Definición del proceso de QA: plan de pruebas, casos de prueba, reporte y seguimiento de defectos, y regresión antes de cada release.</li>
+            </ul>
+            <ul lang="en">
+              <li>Functional testing of marketplace flows: catalog, cart, checkout, payments, orders, and seller management.</li>
+              <li>Validation of Shopify apps and integrations: APIs (REST/GraphQL), webhooks, and themes.</li>
+              <li>Defined the QA process: test plans, test cases, defect reporting and tracking, and regression before every release.</li>
+            </ul>
+          </div>
+          <div class="tags"><span class="tag">Playwright</span><span class="tag">Appium</span><span class="tag">GitHub Actions</span><span class="tag">KPIs</span><span class="tag">Shopify</span><span class="tag">E-commerce</span></div>
         </div></div>
 
         <div class="job reveal"><div class="card">
@@ -467,7 +485,7 @@
         <div class="card skill-group reveal">
           <h3><span lang="es">Dominio</span><span lang="en">Domain</span></h3>
           <div class="tags">
-            <span class="tag">Fintech</span><span class="tag">Payment Gateways</span><span class="tag">QR / Card / Wallet</span><span class="tag">Pix</span><span class="tag">Cash-on-Delivery</span><span class="tag">Payment Processor Integration</span><span class="tag">Settlements &amp; Reconciliation</span><span class="tag">PCI-DSS</span><span class="tag">Secure API Integration</span>
+            <span class="tag">Fintech</span><span class="tag">Payment Gateways</span><span class="tag">QR / Card / Wallet</span><span class="tag">Pix</span><span class="tag">Cash-on-Delivery</span><span class="tag">Payment Processor Integration</span><span class="tag">Settlements &amp; Reconciliation</span><span class="tag">PCI-DSS</span><span class="tag">Secure API Integration</span><span class="tag">E-commerce / Shopify Marketplace</span>
           </div>
         </div>
         <div class="card skill-group reveal">
