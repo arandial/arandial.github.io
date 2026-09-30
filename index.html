@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limbert Arandia Torrico · Product Owner Fintech</title>
+<meta name="description" content="Senior Product Owner y Technical Product Manager con 15 años de experiencia en fintech, pasarelas de pago, QA y automatización de pruebas.">
+<meta property="og:title" content="Limbert Arandia Torrico · Senior Product Owner | Fintech & Payments">
+<meta property="og:description" content="15 años en producto, QA y arquitectura de software. Pasarelas de pago, PCI-DSS, GCP, automatización de pruebas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a4a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='%2338d6b4' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --surface: #ffffff;
+    --surface-2: #eef2f7;
+    --text: #13213a;
+    --muted: #5a6b85;
+    --border: #dde4ee;
+    --primary: #0f2a4a;
+    --accent: #0a9e80;
+    --accent-soft: #d9f4ee;
+    --hero-bg: #0f2a4a;
+    --hero-text: #f2f6fb;
+    --hero-muted: #a9bbd3;
+    --shadow: 0 1px 2px rgba(15,42,74,.06), 0 8px 24px rgba(15,42,74,.06);
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1422;
+      --surface: #111d30;
+      --surface-2: #17263d;
+      --text: #e6edf7;
+      --muted: #97a7bf;
+      --border: #22334d;
+      --primary: #cfe0f5;
+      --accent: #38d6b4;
+      --accent-soft: #123a36;
+      --hero-bg: #08101c;
+      --hero-text: #f2f6fb;
+      --hero-muted: #97a7bf;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1422;
+    --surface: #111d30;
+    --surface-2: #17263d;
+    --text: #e6edf7;
+    --muted: #97a7bf;
+    --border: #22334d;
+    --primary: #cfe0f5;
+    --accent: #38d6b4;
+    --accent-soft: #123a36;
+    --hero-bg: #08101c;
+    --hero-text: #f2f6fb;
+    --hero-muted: #97a7bf;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; line-height: 1.2; margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Language switching: only the active language is shown */
+  html[data-lang="es"] [lang="en"]:not(html) { display: none !important; }
+  html[data-lang="en"] [lang="es"]:not(html) { display: none !important; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--hero-bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .nav .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+  .brand { font-family: "Space Grotesk", sans-serif; font-weight: 700; color: var(--hero-text); text-decoration: none; letter-spacing: .02em; }
+  .brand span { color: #38d6b4; }
+  .nav-links { display: flex; gap: 22px; margin-left: auto; }
+  .nav-links a { color: var(--hero-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .nav-links a:hover { color: var(--hero-text); }
+  .toggles { display: flex; gap: 8px; }
+  .chip-btn {
+    background: rgba(255,255,255,.08); color: var(--hero-text);
+    border: 1px solid rgba(255,255,255,.14); border-radius: 999px;
+    padding: 5px 12px; font: 600 12px Inter, sans-serif; cursor: pointer; min-height: 32px;
+  }
+  .chip-btn:hover { background: rgba(255,255,255,.16); }
+  .chip-btn:focus-visible, .btn:focus-visible, a:focus-visible { outline: 2px solid #38d6b4; outline-offset: 2px; }
+
+  /* Hero */
+  .hero { background: var(--hero-bg); color: var(--hero-text); padding: 80px 0 88px; position: relative; overflow: hidden; }
+  .hero::after {
+    content: ""; position: absolute; right: -160px; top: -160px; width: 520px; height: 520px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,214,180,.22), transparent 65%); pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: center; position: relative; z-index: 1; }
+  .eyebrow { color: #38d6b4; font-weight: 600; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+  .hero h1 { font-size: clamp(34px, 5.5vw, 56px); letter-spacing: -.01em; }
+  .hero .role { font-size: clamp(17px, 2.2vw, 21px); color: var(--hero-muted); margin: 14px 0 22px; font-weight: 500; }
+  .hero p.lead { color: #d3deec; max-width: 580px; margin: 0 0 30px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 600; font-size: 15px;
+    padding: 12px 20px; border-radius: 10px; border: 1px solid transparent; transition: transform .15s, background .15s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: #38d6b4; color: #06231d; }
+  .btn-primary:hover { background: #52e0c1; }
+  .btn-ghost { color: var(--hero-text); border-color: rgba(255,255,255,.25); }
+  .btn-ghost:hover { background: rgba(255,255,255,.08); }
+  .btn svg { width: 18px; height: 18px; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .stat { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 20px; }
+  .stat b { display: block; font-family: "Space Grotesk", sans-serif; font-size: 34px; color: #38d6b4; line-height: 1.1; }
+  .stat small { color: var(--hero-muted); font-size: 13px; }
+
+  /* Sections */
+  section { padding: 80px 0; }
+  .section-head { margin-bottom: 36px; max-width: 680px; }
+  .section-head .eyebrow { color: var(--accent); }
+  .section-head h2 { font-size: clamp(26px, 3.5vw, 36px); color: var(--primary); }
+  .section-head p { color: var(--muted); margin: 10px 0 0; }
+  .alt { background: var(--surface-2); }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+  /* Services */
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .service { padding: 26px; }
+  .icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); margin-bottom: 16px; }
+  .icon svg { width: 22px; height: 22px; }
+  .service h3 { font-size: 18px; margin-bottom: 8px; }
+  .service p { color: var(--muted); margin: 0; font-size: 15px; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+  .about-grid p { margin: 0 0 16px; }
+  .facts { padding: 24px; }
+  .facts dl { margin: 0; display: grid; gap: 14px; }
+  .facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+  .facts dd { margin: 2px 0 0; font-weight: 500; }
+
+  /* Timeline */
+  .timeline { position: relative; display: grid; gap: 20px; }
+  .timeline::before { content: ""; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
+  .job { position: relative; padding-left: 44px; }
+  .job::before {
+    content: ""; position: absolute; left: 4px; top: 26px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--surface); border: 3px solid var(--accent);
+  }
+  .job .card { padding: 24px 26px; }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+  .job h3 { font-size: 19px; }
+  .company { color: var(--accent); font-weight: 600; font-size: 15px; }
+  .dates { color: var(--muted); font-size: 14px; font-weight: 500; white-space: nowrap; }
+  .job ul { margin: 14px 0 0; padding-left: 18px; }
+  .job li { margin-bottom: 6px; }
+  .job li::marker { color: var(--accent); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .tag { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+  .highlight { color: var(--accent); font-weight: 700; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .skill-group { padding: 24px; }
+  .skill-group h3 { font-size: 16px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .skill-group h3::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--accent); }
+  .skill-group .tags { margin-top: 0; }
+  .skill-group .tag { background: var(--accent-soft); color: var(--text); border-color: transparent; font-weight: 500; font-size: 13px; }
+
+  /* Education */
+  .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+  .edu { padding: 24px; }
+  .edu h3 { font-size: 17px; margin-bottom: 14px; }
+  .edu ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .edu li b { display: block; font-weight: 600; }
+  .edu li span { color: var(--muted); font-size: 14px; }
+
+  /* Contact */
+  .contact { background: var(--hero-bg); color: var(--hero-text); text-align: center; }
+  .contact h2 { font-size: clamp(26px, 4vw, 38px); }
+  .contact p { color: var(--hero-muted); max-width: 560px; margin: 14px auto 30px; }
+  .contact .cta { justify-content: center; }
+  footer { background: var(--hero-bg); color: var(--hero-muted); text-align: center; font-size: 13px; padding: 20px 0 32px; border-top: 1px solid rgba(255,255,255,.08); }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .btn { transition: none; }
+  }
+
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .toggles { margin-left: auto; }
+    .hero { padding: 56px 0 64px; }
+    .hero-grid, .about-grid { grid-template-columns: 1fr; }
+    section { padding: 60px 0; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 0 16px; }
+    .stat b { font-size: 28px; }
+    .job { padding-left: 32px; }
+    .timeline::before { left: 7px; }
+    .job::before { left: 0; }
+    .job .card { padding: 20px; }
+    .btn { width: 100%; justify-content: center; }
+  }
+  @media print {
+    .nav, .toggles, .cta { display: none; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#top">L<span>A</span>T</a>
+    <div class="nav-links">
+      <a href="#servicios"><span lang="es">Servicios</span><span lang="en">Services</span></a>
+      <a href="#sobre-mi"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="#experiencia"><span lang="es">Experiencia</span><span lang="en">Experience</span></a>
+      <a href="#habilidades"><span lang="es">Habilidades</span><span lang="en">Skills</span></a>
+      <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+    </div>
+    <div class="toggles">
+      <button class="chip-btn" id="langBtn" type="button" aria-label="Change language / Cambiar idioma">EN</button>
+      <button class="chip-btn" id="themeBtn" type="button" aria-label="Cambiar tema claro/oscuro">◐</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span lang="es">Disponible para proyectos y consultoría</span>
+        <span lang="en">Available for projects & consulting</span>
+      </div>
+      <h1>Limbert Arandia Torrico</h1>
+      <div class="role">Senior Product Owner · Fintech &amp; Payments · Technical Product Manager</div>
+      <p class="lead" lang="es">Ingeniero de Sistemas con 15 años de experiencia en producto, QA y arquitectura de software. Convierto flujos de pago complejos y sensibles a PCI-DSS en roadmaps entregables, alineando al negocio con los equipos de ingeniería.</p>
+      <p class="lead" lang="en">Systems Engineer with 15 years across product, QA, and software architecture. I turn complex, PCI-DSS-sensitive payment flows into shippable roadmaps, aligning business stakeholders with engineering teams.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:limbert.arandia@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span lang="es">Contáctame</span><span lang="en">Contact me</span>
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/limbert-arandia-torrico/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.61 0-1.85 1.25-1.85 2.55v4.91h-4V9.75Z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="Limbert_Arandia_CV_2026.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+          <span lang="es">Descargar CV</span><span lang="en">Download CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="stats" aria-label="Resumen">
+      <div class="stat"><b>15+</b><small lang="es">años de experiencia</small><small lang="en">years of experience</small></div>
+      <div class="stat"><b>~20</b><small lang="es">comercios en pasarela de pagos</small><small lang="en">merchants on payment gateway</small></div>
+      <div class="stat"><b>−50%</b><small lang="es">tiempo de ciclo de regresión</small><small lang="en">regression cycle time</small></div>
+      <div class="stat"><b>−60%</b><small lang="es">tiempo de pruebas con Cypress</small><small lang="en">testing time with Cypress</small></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Services -->
+  <section id="servicios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span lang="es">Cómo puedo ayudarte</span><span lang="en">How I can help</span></div>
+        <h2><span lang="es">Servicios</span><span lang="en">Services</span></h2>
+        <p lang="es">Acompaño a empresas y startups a construir productos digitales seguros, desde la estrategia hasta la calidad en producción.</p>
+        <p lang="en">I help companies and startups build secure digital products, from strategy all the way to production quality.</p>
+      </div>
+      <div class="services">
+        <article class="card service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3><span lang="es">Product Ownership</span><span lang="en">Product Ownership</span></h3>
+          <p lang="es">Visión de producto, roadmap y gestión de backlog. Historias de usuario con criterios de aceptación en Gherkin, listas para desarrollo.</p>
+          <p lang="en">Product vision, roadmap, and backlog management. User stories with Gherkin acceptance criteria, ready for development.</p>
+        </article>
+        <article class="card service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+          <h3><span lang="es">Consultoría Fintech y Pagos</span><span lang="en">Fintech & Payments Consulting</span></h3>
+          <p lang="es">Diseño de pasarelas de pago: QR, tarjeta, billeteras, Pix y contra entrega. Integración de procesadores, conciliación y liquidaciones.</p>
+          <p lang="en">Payment gateway design: QR, card, wallets, Pix, and cash-on-delivery. Processor integration, settlements, and reconciliation.</p>
+        </article>
+        <article class="card service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 12 2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg></div>
+          <h3><span lang="es">Estrategia de QA y Automatización</span><span lang="en">QA Strategy & Test Automation</span></h3>
+          <p lang="es">Creación de equipos y prácticas de QA desde cero. Frameworks con Playwright, Cypress, Appium y CI/CD en GitHub Actions.</p>
+          <p lang="en">Building QA teams and practices from scratch. Frameworks with Playwright, Cypress, Appium, and CI/CD on GitHub Actions.</p>
+        </article>
+        <article class="card service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m6.5 6.5 3.3 3.3m4.4 0 3.3-3.3m-11 11 3.3-3.3m4.4 0 3.3 3.3"/></svg></div>
+          <h3><span lang="es">Arquitectura e Integración</span><span lang="en">Architecture & Integration</span></h3>
+          <p lang="es">Diseño de integraciones con APIs REST y microservicios en Google Cloud, con seguridad OAuth 2.0 / JWT y enfoque PCI-DSS.</p>
+          <p lang="en">Integration design with REST APIs and microservices on Google Cloud, secured with OAuth 2.0 / JWT and a PCI-DSS mindset.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="sobre-mi" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span lang="es">Perfil profesional</span><span lang="en">Professional profile</span></div>
+        <h2><span lang="es">Sobre mí</span><span lang="en">About me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <div lang="es">
+            <p>Soy Product Owner e Ingeniero de Sistemas con 15 años de trayectoria en producto, aseguramiento de calidad y arquitectura de software. Actualmente me especializo en la estrategia de pasarelas de pago cloud-native sobre Google Cloud.</p>
+            <p>Traduzco flujos de pago complejos en roadmaps claros y entregables, alineando a los stakeholders del negocio con equipos de ingeniería en Java/Spring Boot y Node.js.</p>
+            <p>He construido prácticas de QA y automatización desde cero, liderado equipos ágiles y entregado funcionalidades fintech seguras que llegan a producción. Hablo con fluidez el idioma del negocio y el de la ingeniería.</p>
+          </div>
+          <div lang="en">
+            <p>I'm a Product Owner and Systems Engineer with 15 years across product, quality assurance, and software architecture. Today I specialize in strategy for cloud-native payment gateways on Google Cloud.</p>
+            <p>I translate complex payment flows into clear, shippable roadmaps, aligning business stakeholders with Java/Spring Boot and Node.js engineering teams.</p>
+            <p>I've built QA and automation practices from scratch, led Agile teams, and delivered secure fintech features that reach production. I'm fluent in the language of both business and engineering.</p>
+          </div>
+        </div>
+        <aside class="card facts reveal">
+          <dl>
+            <div><dt><span lang="es">Especialidad</span><span lang="en">Focus</span></dt><dd>Fintech · Payment Gateways · PCI-DSS</dd></div>
+            <div><dt><span lang="es">Metodologías</span><span lang="en">Methodologies</span></dt><dd>Agile · Scrum · DevOps</dd></div>
+            <div><dt>Cloud</dt><dd>Google Cloud Platform (GCP)</dd></div>
+            <div><dt><span lang="es">Idiomas</span><span lang="en">Languages</span></dt><dd><span lang="es">Español (nativo) · Inglés (avanzado)</span><span lang="en">Spanish (native) · English (advanced)</span></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:limbert.arandia@gmail.com">limbert.arandia@gmail.com</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span lang="es">Trayectoria</span><span lang="en">Career</span></div>
+        <h2><span lang="es">Experiencia profesional</span><span lang="en">Professional experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="job reveal"><div class="card">
+          <div class="job-head">
+            <div><h3>Product Owner — Payment Gateway Platform</h3><div class="company">DATEC LATAM · Fintech</div></div>
+            <div class="dates"><span lang="es">May 2025 – Ago 2026</span><span lang="en">May 2025 – Aug 2026</span></div>
+          </div>
+          <ul lang="es">
+            <li>Responsable de la visión, roadmap y backlog de una pasarela de pagos cloud-native en GCP que atiende a <span class="highlight">~20 comercios</span> en un entorno transaccional de alto volumen, coordinando un equipo multidisciplinario de 10 ingenieros y especialistas QA.</li>
+            <li>Traducción de flujos de pago QR, tarjeta y billetera a historias de usuario con criterios de aceptación Gherkin para equipos Java/Spring Boot y Node.js.</li>
+            <li>Lideré la expansión del portafolio de medios de pago —Pix, billetera digital, tarjeta, QR y pago contra entrega— ampliando el alcance comercial y la conversión.</li>
+            <li>Impulsé la incorporación de nuevos comercios y la integración de procesadores de pago de terceros.</li>
+            <li>Lideré el diseño de un microservicio de notificación de confirmación de pagos integrado al flujo de callbacks QR y tarjeta, mejorando la transparencia de las transacciones.</li>
+            <li>Definí una solución de liquidación y conciliación con procesamiento batch de fin de día hacia SAP, y mejoras de UX en backoffice que muestran el motivo de transacciones fallidas y reducen el tiempo de soporte.</li>
+          </ul>
+          <ul lang="en">
+            <li>Own the product vision, roadmap, and backlog for a cloud-native payment gateway on GCP serving <span class="highlight">~20 merchants</span> in a high-volume transactional environment, coordinating a cross-functional team of 10 engineers and QA specialists.</li>
+            <li>Translate complex QR, card, and wallet payment flows into development-ready user stories with Gherkin acceptance criteria across Java/Spring Boot and Node.js teams.</li>
+            <li>Led expansion of the payment-method portfolio — Pix, digital wallet, card, QR, and cash-on-delivery — broadening merchant reach and customer conversion.</li>
+            <li>Drove onboarding of new merchants and integration of third-party payment processors.</li>
+            <li>Led the design of a payment-confirmation notification microservice integrated into the live QR and card callback flow, improving transaction transparency.</li>
+            <li>Defined a settlement and reconciliation solution with end-of-day batch processing feeding into SAP, plus backoffice UX improvements that surface failed-transaction reasons and cut support resolution time.</li>
+          </ul>
+          <div class="tags"><span class="tag">GCP</span><span class="tag">PCI-DSS</span><span class="tag">Java / Spring Boot</span><span class="tag">Node.js</span><span class="tag">SAP</span><span class="tag">Gherkin</span></div>
+        </div></div>
+
+        <div class="job reveal"><div class="card">
+          <div class="job-head">
+            <div><h3>Technical Lead &amp; Head of QA</h3><div class="company">DATEC LATAM</div></div>
+            <div class="dates"><span lang="es">May 2024 – Abr 2025</span><span lang="en">May 2024 – Apr 2025</span></div>
+          </div>
+          <ul lang="es">
+            <li>Formé y lideré un <span class="highlight">equipo de QA de 10 personas desde cero</span>, estableciendo estándares de pruebas ágiles y un proceso de gestión de incidentes.</li>
+            <li>Diseñé un framework de automatización (Playwright, Appium, GitHub Actions) que <span class="highlight">redujo el ciclo de regresión en 50%</span> y disminuyó los defectos en producción.</li>
+            <li>Implementé dashboards de KPIs y métricas de calidad que dieron a la dirección visibilidad en tiempo real sobre entregas y defectos.</li>
+          </ul>
+          <ul lang="en">
+            <li>Built and led a <span class="highlight">10-person QA team from the ground up</span>, establishing Agile testing standards and an incident-management process.</li>
+            <li>Architected a test automation framework (Playwright, Appium, GitHub Actions) that <span class="highlight">cut regression cycle time by 50%</span> and reduced production defects.</li>
+            <li>Implemented KPI dashboards and service-quality metrics giving leadership real-time visibility into delivery and defect trends.</li>
+          </ul>
+          <div class="tags"><span class="tag">Playwright</span><span class="tag">Appium</span><span class="tag">GitHub Actions</span><span class="tag">KPIs</span></div>
+        </div></div>
+
+        <div class="job reveal"><div class="card">
+          <div class="job-head">
+            <div><h3>Digital Architect &amp; QA Specialist</h3><div class="company">TIGO Bolivia (Telecel S.A.)</div></div>
+            <div class="dates"><span lang="es">May 2016 – Feb 2024</span><span lang="en">May 2016 – Feb 2024</span></div>
+          </div>
+          <ul lang="es">
+            <li>Diseñé arquitecturas de integración de software y lideré QA del portafolio de proyectos digitales, incluyendo el sitio web público y la aplicación móvil.</li>
+            <li>Implementé un framework de automatización con Cypress que <span class="highlight">redujo el tiempo de pruebas en 60%</span>.</li>
+            <li>Gestioné la entrega de múltiples proyectos digitales de principio a fin, coordinando equipos multidisciplinarios y proveedores externos.</li>
+          </ul>
+          <ul lang="en">
+            <li>Designed software integration architectures and led QA across the digital-projects portfolio, including the public website and mobile app.</li>
+            <li>Implemented a Cypress automation framework that <span class="highlight">cut testing time by 60%</span> and accelerated delivery cycles.</li>
+            <li>Managed end-to-end delivery of multiple digital projects, coordinating cross-functional teams and external vendors.</li>
+          </ul>
+          <div class="tags"><span class="tag">Cypress</span><span class="tag"><span lang="es">Arquitectura</span><span lang="en">Architecture</span></span><span class="tag">Web &amp; Mobile</span><span class="tag">Telecom</span></div>
+        </div></div>
+
+        <div class="job reveal"><div class="card">
+          <div class="job-head">
+            <div><h3>Project Manager</h3><div class="company">INTERSOFT S.A.</div></div>
+            <div class="dates"><span lang="es">Feb 2015 – May 2016</span><span lang="en">Feb 2015 – May 2016</span></div>
+          </div>
+          <ul lang="es"><li>Análisis de requerimientos funcionales y diseño técnico de integraciones para proyectos de APIs y web services, validando las integraciones antes de su liberación.</li></ul>
+          <ul lang="en"><li>Analyzed functional requirements and authored technical integration designs for API/web-service projects, validating integrations before release.</li></ul>
+          <div class="tags"><span class="tag">APIs</span><span class="tag">Web Services</span></div>
+        </div></div>
+
+        <div class="job reveal"><div class="card">
+          <div class="job-head">
+            <div><h3>Quality Software Engineer</h3><div class="company">JALASOFT S.R.L.</div></div>
+            <div class="dates"><span lang="es">Feb 2009 – Dic 2014</span><span lang="en">Feb 2009 – Dec 2014</span></div>
+          </div>
+          <ul lang="es"><li>Diseño y automatización de pruebas (Selenium) para microservicios y plataformas de monitoreo de servidores en web y móvil, reduciendo considerablemente el esfuerzo de pruebas manuales.</li></ul>
+          <ul lang="en"><li>Designed and automated tests (Selenium) for microservices and server-monitoring platforms across web and mobile, substantially reducing manual testing effort.</li></ul>
+          <div class="tags"><span class="tag">Selenium</span><span class="tag">Microservices</span></div>
+        </div></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="habilidades" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span lang="es">Competencias clave</span><span lang="en">Core competencies</span></div>
+        <h2><span lang="es">Habilidades</span><span lang="en">Skills</span></h2>
+      </div>
+      <div class="skills">
+        <div class="card skill-group reveal">
+          <h3><span lang="es">Producto</span><span lang="en">Product</span></h3>
+          <div class="tags">
+            <span class="tag">Product Ownership</span><span class="tag">Product Strategy</span><span class="tag">Roadmapping</span><span class="tag">Backlog Management</span><span class="tag">User Stories &amp; Gherkin</span><span class="tag">Stakeholder Management</span><span class="tag">Agile / Scrum</span><span class="tag"><span lang="es">Priorización</span><span lang="en">Prioritization</span></span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span lang="es">Dominio</span><span lang="en">Domain</span></h3>
+          <div class="tags">
+            <span class="tag">Fintech</span><span class="tag">Payment Gateways</span><span class="tag">QR / Card / Wallet</span><span class="tag">Pix</span><span class="tag">Cash-on-Delivery</span><span class="tag">Payment Processor Integration</span><span class="tag">Settlements &amp; Reconciliation</span><span class="tag">PCI-DSS</span><span class="tag">Secure API Integration</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span lang="es">Técnico</span><span lang="en">Technical</span></h3>
+          <div class="tags">
+            <span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">Google Cloud (GCP)</span><span class="tag">OAuth 2.0 / JWT</span><span class="tag">CI/CD</span><span class="tag">QA Strategy</span><span class="tag">Test Automation</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span lang="es">Herramientas</span><span lang="en">Tools</span></h3>
+          <div class="tags">
+            <span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">TestRail</span><span class="tag">Zephyr</span><span class="tag">Xray</span><span class="tag">Postman</span><span class="tag">SoapUI</span><span class="tag">JMeter</span><span class="tag">Playwright</span><span class="tag">Cypress</span><span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="formacion">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span lang="es">Formación</span><span lang="en">Background</span></div>
+        <h2><span lang="es">Educación y certificaciones</span><span lang="en">Education & certifications</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="card edu reveal">
+          <h3><span lang="es">Educación</span><span lang="en">Education</span></h3>
+          <ul>
+            <li><b><span lang="es">Licenciatura en Ingeniería de Sistemas</span><span lang="en">B.Sc. Systems Engineering</span></b><span>Universidad Mayor de San Simón · 2002 – 2007</span></li>
+            <li><b><span lang="es">Diplomado en Testing de Software</span><span lang="en">Diploma in Software Testing</span></b><span>Fundación Jala · 2009</span></li>
+          </ul>
+        </div>
+        <div class="card edu reveal">
+          <h3><span lang="es">Certificaciones y desarrollo profesional</span><span lang="en">Certifications & professional development</span></h3>
+          <ul>
+            <li><b>Scrum Foundation Professional Certificate (SFPC)</b></li>
+            <li><b>DevOps Fundamentals</b></li>
+            <li><b>TM Forum Fundamentals</b></li>
+            <li><b>AI Agents for Backlog Management (n8n, Jira)</b><span>Product Latam</span></li>
+            <li><b>Enterprise Project Management (EPM)</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contacto" class="contact">
+    <div class="wrap reveal">
+      <h2><span lang="es">¿Trabajamos juntos?</span><span lang="en">Let's work together</span></h2>
+      <p lang="es">Si buscas un Product Owner con experiencia en fintech, o necesitas fortalecer la calidad y automatización de tu producto, escríbeme y conversemos.</p>
+      <p lang="en">If you need a Product Owner with fintech experience, or want to strengthen your product's quality and automation, get in touch and let's talk.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:limbert.arandia@gmail.com">limbert.arandia@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/limbert-arandia-torrico/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/arandial" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year">2026</span> Limbert Arandia Torrico · Senior Product Owner · Fintech &amp; Payments
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    function store(key, val) { try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) { return null; } }
+
+    // Language
+    var langBtn = document.getElementById('langBtn');
+    function setLang(lang) {
+      root.setAttribute('data-lang', lang);
+      root.setAttribute('lang', lang);
+      langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+      store('lang', lang);
+    }
+    var initialLang = store('lang') || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    setLang(initialLang);
+    langBtn.addEventListener('click', function () { setLang(root.getAttribute('data-lang') === 'es' ? 'en' : 'es'); });
+
+    // Theme
+    var savedTheme = store('theme');
+    if (savedTheme) root.setAttribute('data-theme', savedTheme);
+    document.getElementById('themeBtn').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      store('theme', next);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add('in'); });
+    }
+  })();
+</script>
+</body>
+</html>
